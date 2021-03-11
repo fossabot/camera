@@ -5,6 +5,7 @@ import CameraControl from './CameraControl/CameraControl';
 import Navigation from './Navigation';
 
 const Aside = styled.div`
+  width: 15rem;
 `;
 
 const Sidebar:FunctionComponent = () => {
