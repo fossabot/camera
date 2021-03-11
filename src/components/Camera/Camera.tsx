@@ -60,7 +60,7 @@ const Camera:CameraComponents = ({ name, selected: _selected = false, image }:Ca
         dimmed={dimmerActive}
         blurring
       >
-        <Dimmer active={dimmerActive}><Button>Ciao</Button></Dimmer>
+        <Dimmer active={dimmerActive}><Button>Ciao come</Button></Dimmer>
         <Image src={image} />
       </Dimmer.Dimmable>
       <Card.Content>Ciao</Card.Content>
