@@ -1,6 +1,4 @@
-// eslint-disable-next-line no-use-before-define
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import {
   Button, Form, Header, Message, Segment

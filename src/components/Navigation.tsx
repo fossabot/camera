@@ -1,53 +1,29 @@
-/* eslint-disable max-len */
-// eslint-disable-next-line no-use-before-define
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import {
-  Menu, Icon, Label, MenuItemProps
+  Menu, Icon, Label
 } from 'semantic-ui-react';
 
-const Navigation = () => {
-  const [activeItem, setActiveItem] = useState('dashboard');
-
-  const handleItemClick = (_event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, data: MenuItemProps) => {
-    setActiveItem(data.name || 'null');
-  };
-
-  return (
-    <Menu vertical pointing>
-      <Menu.Item
-        name="dashboard"
-        active={activeItem === 'dashboard'}
-        onClick={handleItemClick}
-      >
-        <Icon name="video play" />
-        Dashboard
-      </Menu.Item>
-
-      <Menu.Item
-        name="cameras"
-        active={activeItem === 'cameras'}
-        onClick={handleItemClick}
-      >
-        <Icon.Group className="icon">
-          <Icon name="video camera" />
-          <Icon name="setting" corner="bottom left" />
-        </Icon.Group>
-        <Label>7</Label>
-        Cameras
-      </Menu.Item>
-
-      <Menu.Item
-        name="updates"
-        active={activeItem === 'updates'}
-        onClick={handleItemClick}
-      >
-        <Icon name="setting" />
-        Setting
-      </Menu.Item>
-    </Menu>
-  );
-};
+const Navigation = () => (
+  <Menu vertical pointing>
+    <NavLink className="item" to="/" activeClassName="active" exact>
+      <Icon name="video play" />
+      Dashboard
+    </NavLink>
+    <NavLink className="item" to="/login" activeClassName="active" exact>
+      <Icon.Group className="icon">
+        <Icon name="video camera" />
+        <Icon name="setting" corner="bottom left" />
+      </Icon.Group>
+      <Label>7</Label>
+      Cameras
+    </NavLink>
+    <NavLink className="item" to="/setting" activeClassName="active" exact>
+      <Icon name="setting" />
+      Setting
+    </NavLink>
+  </Menu>
+);
 
 export default Navigation;

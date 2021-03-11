@@ -44,11 +44,11 @@ const App = () => (
       <Sidebar />
       <Content>
         <Switch>
-          <Route path="/">
-            <Dashboard />
-          </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/">
+            <Dashboard />
           </Route>
         </Switch>
       </Content>
