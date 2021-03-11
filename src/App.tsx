@@ -44,8 +44,11 @@ const App = () => (
       <Sidebar />
       <Content>
         <Switch>
-          <Route path="/login">
-            <Login />
+          <Route path="/settings">
+            Settings [WIP]
+          </Route>
+          <Route path="/cameras">
+            Cameras [WIP]
           </Route>
           <Route path="/">
             <Dashboard />

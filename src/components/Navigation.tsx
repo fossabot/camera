@@ -11,7 +11,7 @@ const Navigation = () => (
       <Icon name="video play" />
       Dashboard
     </NavLink>
-    <NavLink className="item" to="/login" activeClassName="active" exact>
+    <NavLink className="item" to="/cameras" activeClassName="active" exact>
       <Icon.Group className="icon">
         <Icon name="video camera" />
         <Icon name="setting" corner="bottom left" />
@@ -19,9 +19,9 @@ const Navigation = () => (
       <Label>7</Label>
       Cameras
     </NavLink>
-    <NavLink className="item" to="/setting" activeClassName="active" exact>
+    <NavLink className="item" to="/settings" activeClassName="active" exact>
       <Icon name="setting" />
-      Setting
+      Settings
     </NavLink>
   </Menu>
 );
