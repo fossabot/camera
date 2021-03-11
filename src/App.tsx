@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Blurring dimmer no grayscale content */
   .blurring.dimmed.dimmable > :not(.dimmer) {
-    -webkit-filter: blur(5px) grayscale(0) ;
+    /* -webkit-filter: blur(5px) grayscale(0) ; */
     filter: blur(5px) grayscale(0);
   }
 `;
