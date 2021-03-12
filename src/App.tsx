@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Lighter dimmer */
   .ui.dimmer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
   }
 
   /* Blurring dimmer no grayscale content */

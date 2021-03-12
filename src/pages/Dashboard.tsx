@@ -8,8 +8,8 @@ import camera2Img from '../img/latest_ciao.jpg';
 const Dashboard = () => (
   <>
     <Camera.Group>
-      <Camera name="Camera" image={camera1Img} />
-      <Camera name="Camera" image={camera2Img} />
+      <Camera name="Ufficio" image={camera1Img} isRecording />
+      <Camera name="Cassa" image={camera2Img} />
       <Camera name="Camera" image={camera1Img} />
     </Camera.Group>
   </>
